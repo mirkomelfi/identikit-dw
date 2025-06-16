@@ -1,0 +1,161 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f8f9fa, #e6f0ff);
+    color: #333;
+  }
+
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+  }
+
+  nav {
+    background-color: #0055aa;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    display: inline;
+    margin: 0 15px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  h2 {
+    color: #003366;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  blockquote {
+    font-weight: 700;
+    font-style: italic;
+    color: #444;
+    text-align: center;
+  }
+
+  img {
+    padding: 5px;
+  }
+
+  #tabla {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+
+  td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #titulo_tabla {
+    font-size: large;
+    font-weight: 700;
+    background-color: #e0e7ff;
+  }
+
+  #descripcion_tabla {
+    font-weight: 700;
+  }
+
+  .favoritos {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    align-items: center;
+  }
+
+  .favoritos img {
+    margin: 0 10px;
+    transition: transform 0.2s ease;
+  }
+
+  .favoritos img:hover {
+    transform: scale(1.1);
+  }
+  footer {
+    background-color: #024f9c;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95em;
+    margin-top: 40px;
+    color: black;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  .footer-content a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .redes  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .redes img {
+
+    margin: 10px;
+    margin-bottom: 0px;
+    transition: transform 0.2s;
+  }
+  
+  .redes img:hover {
+    transform: scale(1.2);
+  }
+  
+/*
+.img{
+    float: left;
+}
+
+nav{
+    line-height: 50px;//= al height p centraar verticalmente
+    text-align: right;
+}*/

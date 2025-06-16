@@ -1,0 +1,126 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f8f9fa, #e6f0ff);
+  }
+
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+  }
+
+  header h1 {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #0055aa;
+  }
+
+  nav li {
+    display: inline;
+    margin: 0 15px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  .pantalla {
+    display: none;
+    margin-top: 30px;
+  }
+
+  .pantalla:target {
+    display: block;
+  }
+
+  #inicio {
+    display: block;
+    margin-top: 30px;
+  }
+
+  td img {
+    width: 200px;
+    margin: 20px;
+    border: 3px solid transparent;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  td img:hover {
+    border-color: #003366;
+  }
+
+  .correcto {
+    color: green;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .incorrecto {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  h2 {
+    color: darkgreen;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .volver {
+    display: block;
+    margin-top: 20px;
+  }
+  footer {
+    background-color: #024f9c;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95em;
+    margin-top: 40px;
+    color: black;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  .footer-content a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .redes  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .redes img {
+
+    margin: 10px;
+    margin-bottom: 0px;
+    transition: transform 0.2s;
+  }
+  
+  .redes img:hover {
+    transform: scale(1.2);
+  }
