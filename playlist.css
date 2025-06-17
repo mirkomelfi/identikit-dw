@@ -149,6 +149,11 @@ footer {
   margin-top: 3rem;
 }
 
+  .infoMobile{
+    display: none;
+  }
+
+
 .footer-content a {
   color: #007bff;
   font-weight: 600;
@@ -272,5 +277,12 @@ footer {
 
   .contenido{
     width: 100%;
+  }
+
+  .infoMobile{
+    display: block;
+  }
+  .infoWeb{
+    display: none;
   }
 }

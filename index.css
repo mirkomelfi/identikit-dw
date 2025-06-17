@@ -164,6 +164,10 @@ footer {
   margin-top: 3rem;
 }
 
+.infoMobile{
+  display: none;
+}
+
 .footer-content a {
   color: #007bff;
   text-decoration: none;
@@ -308,5 +312,27 @@ footer {
 
   .nav-links li a:hover {
     color: #007bff;
+  }
+
+  .infoMobile{
+    display: block;
+  }
+  .infoWeb{
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .frase{
+    margin: 0 1rem;
+  }
+  .tabla{
+    padding: 1rem;
+  }
+  h1,h2{
+    font-size: 1.4rem;
+  }
+  .bienvenida p{
+    text-align: left;
   }
 }

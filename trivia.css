@@ -137,6 +137,11 @@ footer {
   margin-top: 3rem;
 }
 
+.infoMobile{
+  display: none;
+}
+
+
 .footer-content p {
   margin: 0.3rem 0;
 }
@@ -229,6 +234,7 @@ footer {
   transition: all 0.3s ease;
 }
 
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -276,5 +282,12 @@ footer {
   div,p,h1,h2{
     margin-right: 1rem; 
     margin-left: 1rem;
+  }
+
+  .infoMobile{
+    display: block;
+  }
+  .infoWeb{
+    display: none;
   }
 }

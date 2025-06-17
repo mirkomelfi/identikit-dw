@@ -133,6 +133,10 @@ footer {
   margin-top: 3rem;
 }
 
+  .infoMobile{
+    display: none;
+  }
+
 .footer-content a {
   color: #007bff;
   text-decoration: none;
@@ -290,5 +294,63 @@ footer {
 
   .nav-links li a:hover {
     color: #007bff;
+  }
+
+  .infoMobile{
+    display: block;
+  }
+  .infoWeb{
+    display: none;
+  }
+
+}
+
+
+.grid-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  table {
+    display: none;
+  }
+
+  .grid-mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .raza-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+
+  .raza-item img {
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+  }
+
+  .raza-item p {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #0B0E29;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  .bienvenida h2{
+    font-size: 1.2rem;
   }
 }
