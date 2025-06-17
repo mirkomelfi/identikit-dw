@@ -1,114 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Razas de Perros</title>
-  <link rel="icon" href="assets/ios7-paw_icon-icons.webp" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="razas.css">
-
+  <link rel="stylesheet" href="razas.css" />
+  <link rel="icon" href="assets/ios7-paw_icon-icons.webp" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <header>
-    <h1>Mirko Melfi</h1>
-  </header>
-
-  <nav>
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#">Razas</a></li>
-        <li><a href="trivia.html">Trivia</a></li>
-        <li><a href="playlist.html">Playlist</a></li>
+<header class="header">
+  <div class="logo">Identi<span>Kit</span></div>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="razas.html">Razas</a></li>
+      <li><a href="trivia.html">Trivia</a></li>
+      <li><a href="playlist.html">Playlist</a></li>
     </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </nav>
+</header>
 
-  <h2>🐕 Las 6 razas que no pasan desapercibidas en Argentina</h2>
-  <p>Elija una raza y le diremos su personalidad.</p>
 
-  <section id="tabla">
-    <center>
-    <table border="1">
-      <tr>
-        <td colspan="4" align="center" id="titulo_tabla">Las 6 razas que no pasan desapercibidas en Argentina</td>
-      </tr>
-      <tr>
-        <td>Golden Retriever</td>
-        <td>Pomeranian</td>
-        <td>Pastor Alemán</td>
-      </tr>
-      <tr>
-        <td><a href="#golden"><img src="assets/golden.jpeg" alt="Golden Retriever"></a></td>
-        <td><a href="#pomeranian"><img src="assets/pomeranian.jpeg" alt="Pomeranian"></a></td>
-        <td><a href="#pastor"><img src="assets/2000.jpeg" alt="Pastor Alemán"></a></td>
-      </tr>
-      <tr>
-        <td>Jack Russel</td>
-        <td>Pitbull</td>
-        <td>Bulldog Francés</td>
-      </tr>
-      <tr>
-        <td><a href="#jack"><img src="assets/jack.jpeg" alt="Jack Russel"></a></td>
-        <td><a href="#pitbull"><img src="assets/pit.jpeg" alt="Pitbull"></a></td>
-        <td><a href="#bulldog"><img src="assets/bull.jpeg" alt="Bulldog Francés"></a></td>
-      </tr>
-    </table>
-    </center>
-  </section>
+  <main class="main-content">
+    <section class="bienvenida">
+      <h2>🐕 Las 6 razas que no pasan desapercibidas en Argentina</h2>
+      <p>Elija una raza y le diremos su personalidad.</p>
+    </section>
 
-  <div id="pastor" class="descripcion">
-    <h3>🐕 Ovejero Alemán</h3>
-    <p><strong>Descripción de la raza:</strong> El ovejero alemán es una de las razas más inteligentes y versátiles. Fuerte, obediente y muy leal, es utilizado como perro de trabajo en fuerzas policiales, de rescate o tareas de protección. Requiere estimulación mental y física constante. Es protector con su familia y algo desconfiado con extraños.</p>
-    <p><strong>Perfil del dueño:</strong> Generalmente es una persona disciplinada, con vocación de liderazgo. Le gustan los retos, la actividad física y valora el compañerismo y la lealtad. Muchas veces es alguien que trabaja en seguridad, deporte o tiene una personalidad organizada. No es raro que tenga experiencia previa con perros.</p>
-  </div>
+    <section class="tabla">
+      <table border="1">
+        <tr>
+          <th colspan="3">Las 6 razas que no pasan desapercibidas en Argentina</th>
+        </tr>
+        <tr>
+          <td>Golden Retriever</td>
+          <td>Pomeranian</td>
+          <td>Pastor Alemán</td>
+        </tr>
+        <tr>
+          <td><a href="#golden"><img src="assets/golden.jpeg" alt="Golden Retriever" /></a></td>
+          <td><a href="#pomeranian"><img src="assets/pomeranian.jpeg" alt="Pomeranian" /></a></td>
+          <td><a href="#pastor"><img src="assets/2000.jpeg" alt="Pastor Alemán" /></a></td>
+        </tr>
+        <tr>
+          <td>Jack Russel</td>
+          <td>Pitbull</td>
+          <td>Bulldog Francés</td>
+        </tr>
+        <tr>
+          <td><a href="#jack"><img src="assets/jack.jpeg" alt="Jack Russel" /></a></td>
+          <td><a href="#pitbull"><img src="assets/pit.jpeg" alt="Pitbull" /></a></td>
+          <td><a href="#bulldog"><img src="assets/bull.jpeg" alt="Bulldog Francés" /></a></td>
+        </tr>
+      </table>
+    </section>
 
-  <div id="jack" class="descripcion">
-    <h3>🐶 Jack Russell Terrier</h3>
-    <p><strong>Descripción de la raza:</strong> Pequeño en tamaño pero gigante en energía. El Jack Russell es un torbellino de curiosidad y movimiento. Tiene un fuerte instinto cazador, es testarudo, pero extremadamente inteligente. Le encantan los juegos, los desafíos mentales y explorar.</p>
-    <p><strong>Perfil del dueño:</strong> Una persona enérgica, activa, con ganas de vivir aventuras. Suelen ser jóvenes, deportistas o con espíritu libre. No les molesta el ruido o el caos, sino que lo disfrutan. Les atraen los animales con personalidad y no les asustan los desafíos.</p>
-  </div>
+    <!-- Descripciones por raza -->
+    <section class="descripcion" id="pastor">
+      <h3>🐕 Ovejero Alemán</h3>
+      <p><strong>Descripción de la raza:</strong> El ovejero alemán es una de las razas más inteligentes y versátiles. Fuerte, obediente y muy leal, es utilizado como perro de trabajo en fuerzas policiales, de rescate o tareas de protección. Requiere estimulación mental y física constante. Es protector con su familia y algo desconfiado con extraños.</p>
+      <p><strong>Perfil del dueño:</strong> Generalmente es una persona disciplinada, con vocación de liderazgo. Le gustan los retos, la actividad física y valora el compañerismo y la lealtad. Muchas veces es alguien que trabaja en seguridad, deporte o tiene una personalidad organizada. No es raro que tenga experiencia previa con perros.</p>
+    </section>
 
-  <div id="pitbull" class="descripcion">
-    <h3>🐕‍🦺 Pitbull Terrier</h3>
-    <p><strong>Descripción de la raza:</strong> Físicamente poderoso y de apariencia imponente, el pitbull es en realidad un perro extremadamente sensible y afectuoso con las personas. Es muy leal, protector y necesita una guía firme. Con una crianza adecuada, es un perro sociable y equilibrado.</p>
-    <p><strong>Perfil del dueño:</strong> Alguien comprometido, que valora la lealtad por encima de todo. Suelen ser personas decididas, seguras de sí mismas y con una fuerte conexión emocional con su mascota. También suelen ser defensores de causas sociales, ya que el pitbull es una raza muchas veces estigmatizada.</p>
-  </div>
+    <section class="descripcion" id="jack">
+      <h3>🐶 Jack Russell Terrier</h3>
+      <p><strong>Descripción de la raza:</strong> Pequeño en tamaño pero gigante en energía. El Jack Russell es un torbellino de curiosidad y movimiento. Tiene un fuerte instinto cazador, es testarudo, pero extremadamente inteligente. Le encantan los juegos, los desafíos mentales y explorar.</p>
+      <p><strong>Perfil del dueño:</strong> Una persona enérgica, activa, con ganas de vivir aventuras. Suelen ser jóvenes, deportistas o con espíritu libre. No les molesta el ruido o el caos, sino que lo disfrutan. Les atraen los animales con personalidad y no les asustan los desafíos.</p>
+    </section>
 
-  <div id="bulldog" class="descripcion">
-    <h3>🐾 Bulldog Francés</h3>
-    <p><strong>Descripción de la raza:</strong> Este pequeño y robusto compañero es famoso por su carisma, orejas de murciélago y expresión divertida. Es tranquilo, afectuoso y le encanta estar en compañía. Ideal para departamentos o espacios pequeños, se adapta fácilmente a la vida urbana.</p>
-    <p><strong>Perfil del dueño:</strong> Dueño con estilo, sociable, con vida activa pero urbana. Tal vez trabaja desde casa o disfruta de cafeterías, parques y lugares pet-friendly. Es alguien que busca un perro compañero, más que un atleta, y valora mucho la conexión emocional.</p>
-  </div>
+    <section class="descripcion" id="pitbull">
+      <h3>🐕‍🦺 Pitbull Terrier</h3>
+      <p><strong>Descripción de la raza:</strong> Físicamente poderoso y de apariencia imponente, el pitbull es en realidad un perro extremadamente sensible y afectuoso con las personas. Es muy leal, protector y necesita una guía firme. Con una crianza adecuada, es un perro sociable y equilibrado.</p>
+      <p><strong>Perfil del dueño:</strong> Alguien comprometido, que valora la lealtad por encima de todo. Suelen ser personas decididas, seguras de sí mismas y con una fuerte conexión emocional con su mascota. También suelen ser defensores de causas sociales, ya que el pitbull es una raza muchas veces estigmatizada.</p>
+    </section>
 
-  <div id="pomeranian" class="descripcion">
-    <h3>🦊 Pomeranian</h3>
-    <p><strong>Descripción de la raza:</strong> Aunque pesa apenas unos kilos, el pomeranian tiene una personalidad dominante y extrovertida. Su pelaje esponjoso lo hace parecer un peluche viviente. Es alerta, vocal y le encanta estar en el centro de atención.</p>
-    <p><strong>Perfil del dueño:</strong> Dueños detallistas, creativos, posiblemente amantes de la moda, el diseño o las redes sociales. Suelen ser personas expresivas, que disfrutan mostrar a su mascota y dedicarle tiempo. Ideal para quienes buscan una mascota con actitud y estilo.</p>
-  </div>
+    <section class="descripcion" id="bulldog">
+      <h3>🐾 Bulldog Francés</h3>
+      <p><strong>Descripción de la raza:</strong> Este pequeño y robusto compañero es famoso por su carisma, orejas de murciélago y expresión divertida. Es tranquilo, afectuoso y le encanta estar en compañía. Ideal para departamentos o espacios pequeños, se adapta fácilmente a la vida urbana.</p>
+      <p><strong>Perfil del dueño:</strong> Dueño con estilo, sociable, con vida activa pero urbana. Tal vez trabaja desde casa o disfruta de cafeterías, parques y lugares pet-friendly. Es alguien que busca un perro compañero, más que un atleta, y valora mucho la conexión emocional.</p>
+    </section>
 
-  <div id="golden" class="descripcion">
-    <h3>🐕 Golden Retriever</h3>
-    <p><strong>Descripción de la raza:</strong> El golden retriever es el clásico perro de familia. Dulce, amigable y paciente, se lleva bien con niños, otros animales y hasta desconocidos. Aprende rápido, le encanta jugar y necesita mucha interacción con su entorno.</p>
-    <p><strong>Perfil del dueño:</strong> Persona empática, social, paciente. Puede ser parte de una familia, una pareja joven o alguien que ama la vida al aire libre. Suele disfrutar de actividades como caminatas, picnic o tiempo en familia. Busca una mascota equilibrada, afectiva y fácil de tratar.</p>
-  </div>
+    <section class="descripcion" id="pomeranian">
+      <h3>🦊 Pomeranian</h3>
+      <p><strong>Descripción de la raza:</strong> Aunque pesa apenas unos kilos, el pomeranian tiene una personalidad dominante y extrovertida. Su pelaje esponjoso lo hace parecer un peluche viviente. Es alerta, vocal y le encanta estar en el centro de atención.</p>
+      <p><strong>Perfil del dueño:</strong> Dueños detallistas, creativos, posiblemente amantes de la moda, el diseño o las redes sociales. Suelen ser personas expresivas, que disfrutan mostrar a su mascota y dedicarle tiempo. Ideal para quienes buscan una mascota con actitud y estilo.</p>
+    </section>
+
+    <section class="descripcion" id="golden">
+      <h3>🐕 Golden Retriever</h3>
+      <p><strong>Descripción de la raza:</strong> El golden retriever es el clásico perro de familia. Dulce, amigable y paciente, se lleva bien con niños, otros animales y hasta desconocidos. Aprende rápido, le encanta jugar y necesita mucha interacción con su entorno.</p>
+      <p><strong>Perfil del dueño:</strong> Persona empática, social, paciente. Puede ser parte de una familia, una pareja joven o alguien que ama la vida al aire libre. Suele disfrutar de actividades como caminatas, picnic o tiempo en familia. Busca una mascota equilibrada, afectiva y fácil de tratar.</p>
+    </section>
+  </main>
 
   <footer>
     <div class="footer-content">
-      <p><strong>Contacto</strong></p>
-      
-      <p>Mirko Melfi</p>
-      <p>Teléfono: 1133169586</p>
-      <p>Email: <a href="mailto:mmelfideveloper@gmail.com">mmelfideveloper@gmail.com</a></p>
+      <p><strong>Contacto:</strong> mmelfideveloper@gmail.com | Tel: 1133169586</p>
       <div class="redes">
-        <a href="https://instagram.com" target="_blank"><img src="assets/instagram_social_media_brand_logo_application_icon_210428.svg" alt="Instagram" width="25"></a>
-        <a href="https://LinkedIn.com" target="_blank"><img src="assets/LinkedIn_Rounded_Solid_icon-icons.com_61559.svg" alt="LinkedIn" width="30"></a>
-        <a href="https://Facebook.com" target="_blank"><img src="assets/FB_icon-icons.com_65484.svg" alt="Facebook" width="25"></a>
+        <a href="https://instagram.com" target="_blank"><img src="assets/instagram_social_media_brand_logo_application_icon_210428.svg" alt="Instagram" /></a>
+        <a href="https://linkedin.com" target="_blank"><img src="assets/LinkedIn_Rounded_Solid_icon-icons.com_61559.svg" alt="LinkedIn" /></a>
+        <a href="https://facebook.com" target="_blank"><img src="assets/FB_icon-icons.com_65484.svg" alt="Facebook" /></a>
       </div>
     </div>
   </footer>
-  
-  <a href="/" class="btn-flotante-linktree" title="Volver">← Volver al Inicio</a>
+
+  <a href="https://mirkomelfi.github.io/identikit-dw/index.html" class="btn-flotante-linktree" title="Volver">← Volver al Inicio</a>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+  </script>
+
+
 </body>
+
 </html>

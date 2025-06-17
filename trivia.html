@@ -12,18 +12,24 @@
 </head>
 <body>
 
-  <header>
-    <h1>Mirko Melfi</h1>
-  </header>
-
-  <nav>
-    <ul>
+  <header class="header">
+    <div class="logo">Identi<span>Kit</span></div>
+    <nav class="navbar">
+      <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="razas.html">Razas</a></li>
-        <li><a href="#">Trivia</a></li>
+        <li><a href="trivia.html">Trivia</a></li>
         <li><a href="playlist.html">Playlist</a></li>
-    </ul>
-  </nav>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+
 
   <h2>🐾 Trivia: ¿Qué tanto sabés sobre las razas?</h2>
   <p>Elegí una opción en cada pregunta. ¡A ver cuántas acertás!</p>
@@ -94,6 +100,23 @@
       </div>
     </div>
   </footer>
-  <a href="/" class="btn-flotante-linktree" title="Volver">← Volver al Inicio</a>
+  <a href="https://mirkomelfi.github.io/identikit-dw/index.html" class="btn-flotante-linktree" title="Volver">← Volver al Inicio</a>
+
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+  </script>
+
 </body>
+
 </html>
